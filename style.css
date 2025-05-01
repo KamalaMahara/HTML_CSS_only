@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background{
+    background: url("https://img.freepik.com/premium-photo/girl-woking-laptop-with-child-8k-wallpaper-stock-photographic-image_915071-53702.jpg") no-repeat fixed left top;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+}
+.background .sidebar{
+    position: fixed;
+    height: 100vh;
+    width:280px;
+    left:-280px; 
+    background: rgba(255, 255, 255, 0.097) ;
+    box-shadow: 0 0 6px rgba(233, 228, 228, 0.923) ;
+}
+.sidebar{
+    position: absolute;
+    width: 100%;
+    height:60px;
+    box-shadow:0 0 6px rgba(233, 228, 228, 0.923)  ;
+}
+ .header{
+    color: white;
+    position: absolute;
+    width: 100%;
+    height:60px;
+    box-shadow:0 0 6px rgba(233, 228, 228, 0.923)  ;
+    padding-left: 70px ;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.menu{
+    position:absolute;
+    top:80px;
+    width:100%;
+
+}
+
+.menu li{
+    margin-top: 6px;
+    padding: 14px 20px;
+    transition: all o.3s linear;
+   
+
+}
+.menu i{
+    color:white;
+    font-size: 20px;
+    padding-right: 8px;
+
+}
+.menu a{
+    text-decoration: none;
+    font-size: 20px;
+    color:white;
+}
+.menu li:hover{
+    border-left: 2px solid white;
+    box-shadow: 0 0 4px rgba(233, 228, 228, 0.923);
+
+}
+.social_media{
+    position: absolute;
+    left: 50%;
+    bottom:30px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.social_media i{
+ color:white;
+ padding:0 5px;
+ opacity: 0.6;
+ font-size: 20px;
+ transition: all o.2s linear;
+
+}
+.social_media i:hover{
+    opacity: 1;
+    
+}
+#check{
+    display: none;
+
+}
+ .background .btn_one i{
+    color:#fff;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    cursor: pointer;
+   opacity:1;
+   transition: all o.3s linear;
+
+
+}
+ .background .btn_two i{
+    font-size: 26px;
+    line-height: 60px;
+    position: absolute;
+    left:240px;
+    cursor: pointer;
+    opacity:1;
+    transition: all 0.3s linear;
+
+
+}
+.btn_one i:hover{
+    font-size: 29px;
+}
+.btn_one i:hover{
+    font-size: 24px;
+}
+
+#check:checked ~ .background .sidebar{
+    left: 0;
+}
+#check:checked ~ .btn_one i{
+    opacity: 1;
+    
+}
+
+#check:checked ~ .btn_two i{
+    opacity: 0;
+}
