@@ -18,7 +18,9 @@
     left:-280px; 
     background: rgba(255, 255, 255, 0.097) ;
     box-shadow: 0 0 6px rgba(233, 228, 228, 0.923) ;
-}
+    transition: left 0.3s ease;
+    z-index: 1000;
+} 
 .sidebar{
     position: absolute;
     width: 100%;
@@ -131,3 +133,19 @@
 #check:checked ~ .btn_two i{
     opacity: 0;
 }
+@media (max-width: 768px) {
+    .background .sidebar {
+        width: 200px; /* narrower sidebar on small screens */
+    }
+    .background .btn_two i {
+        left: 170px; /* adjust close button position */
+    }
+    .background .btn_one i,
+    .background .btn_two i{
+        font-size: 24px;
+        left: 12px;
+    }
+}
+ footer{
+    text-align: center;
+ }
